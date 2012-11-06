@@ -1,0 +1,129 @@
+body { 
+    background-color:transparent;
+}
+
+/*
+ * Header
+ ********************************************/
+.header-wrapper {
+    background:#e5e6e8 url('images/light_noise_diagonal.png');
+    border-bottom:1px solid #ddd;
+    margin-bottom:30px;
+
+    .logo {
+        .logoImage {
+            background-image: url('images/logo.png');
+            background-position: center center;
+            background-repead: no-repeat;
+            float:left;
+            height: 81px;
+            margin:10px 0;
+            width: 239px;
+        }
+        .logoText { display:none }
+    }
+}
+
+body#admin-home.login .navbar .nav-collapse.collapse { display:none }
+
+/*
+ * Footer
+ ********************************************/
+.footer { 
+    font-size:.8em 
+}
+
+body#admin-product.add .footer { display:none }
+
+
+body#admin-vendor.add {
+    form { margin: 0 0 0 0 }
+    #resultsContainer {
+        table {
+            thead tr th:nth-child(1),
+            tbody tr td:nth-child(1){
+                width: 40px; text-align:center 
+            }
+        }
+    }
+}
+
+.loadingIndicator {
+    background-image: url("images/loading_large_icon.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 36px;
+}
+
+#importingIndicator,
+#loadingIndicator {
+    display:none;
+
+    p {
+        height:40px;
+        line-height:40px;
+        text-indent:15px;
+
+        .loadingIndicator {
+            float:left;
+        }
+    }
+}
+
+#importAlert { display: none }
+
+.noMargins { margin: 0 0 0 0 }
+
+.rightFade {
+    background-image: -linear-gradient(right, #fff, #eee);
+    background-image: -moz-linear-gradient(right, #fff, #eee);
+    background-image: -webkit-linear-gradient(right, #fff, #eee);
+}
+
+.productThumbnail {
+    background-color:#ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 110px;
+    line-height: 110px;
+    width:  110px;
+}
+
+body#admin-product.edit .product_record form,
+body#admin-product.view .product_record form {
+    label { font-weight: bold }
+    label, input, textarea { width:99% }
+
+    hr { margin:10px 0 }
+
+    div.span4 {
+        label, input, textarea { width: 97% } 
+    }
+
+    div.span6 {
+        label, input, textarea { width: 97.5% } 
+    }
+
+    table {
+        th { width:170px;vertical-align:middle }
+        input { width:85% }
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    body#admin-product.edit .product_record form,
+    body#admin-product.view .product_record form {
+        table {
+            th { width:auto }
+        }
+    }
+
+}

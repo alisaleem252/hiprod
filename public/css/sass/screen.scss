@@ -1,0 +1,94 @@
+body { background-color:transparent; padding-top: 0 }
+
+.logo {
+    .logoImage {
+        background-image: url('images/logo.png');
+        background-position: center center;
+        background-repead: no-repeat;
+        float:left;
+        height: 81px;
+        margin:10px 0;
+        width: 239px;
+    }
+    .logoText { display:none }
+}
+
+/*
+ * Header
+ ********************************************/
+
+.header-wrapper {
+    background:#e5e6e8 url('images/light_noise_diagonal.png');
+    border-bottom:1px solid #ddd;
+}
+
+/*
+ * Footer
+ ********************************************/
+
+footer {
+    color:#777;
+    font-size:.8em;
+    margin-top:50px;
+}
+
+.page-header.new-here { margin-top: 105px }
+
+body#home.login {
+    form.well {
+        .form-actions {
+            margin-bottom:0
+        }
+    }
+}
+
+.noMargins { margin: 0 0 0 0 }
+
+.productThumbnail {
+    background-color:#ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 110px;
+    line-height: 110px;
+    width:  110px;
+}
+
+.rightFade {
+    background-image: -linear-gradient(right, #fff, #eee);
+    background-image: -moz-linear-gradient(right, #fff, #eee);
+    background-image: -webkit-linear-gradient(right, #fff, #eee);
+}
+
+body#product.edit .product_record form,
+body#product.view .product_record form {
+    label { font-weight: bold }
+    label, input, textarea { width:99% }
+
+    hr { margin:10px 0 }
+
+    div.span4 {
+        label, input, textarea { width: 97% } 
+    }
+
+    div.span6 {
+        label, input, textarea { width: 97.5% } 
+    }
+
+    table {
+        th { width:170px;vertical-align:middle }
+        input { width:85% }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .page-header.new-here { margin-top: 0 }
+
+    body#admin-product.edit .product_record form,
+    body#admin-product.view .product_record form {
+        table {
+            th { width:auto }
+        }
+    }
+}

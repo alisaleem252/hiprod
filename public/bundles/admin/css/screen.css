@@ -1,0 +1,167 @@
+/* line 1, sass/screen.scss */
+body {
+  background-color: transparent;
+}
+
+/*
+ * Header
+ ********************************************/
+/* line 8, sass/screen.scss */
+.header-wrapper {
+  background: #e5e6e8 url("images/light_noise_diagonal.png");
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+/* line 14, sass/screen.scss */
+.header-wrapper .logo .logoImage {
+  background-image: url("images/logo.png");
+  background-position: center center;
+  background-repead: no-repeat;
+  float: left;
+  height: 81px;
+  margin: 10px 0;
+  width: 239px;
+}
+/* line 23, sass/screen.scss */
+.header-wrapper .logo .logoText {
+  display: none;
+}
+
+/* line 27, sass/screen.scss */
+body#admin-home.login .navbar .nav-collapse.collapse {
+  display: none;
+}
+
+/*
+ * Footer
+ ********************************************/
+/* line 32, sass/screen.scss */
+.footer {
+  font-size: 0.8em;
+}
+
+/* line 36, sass/screen.scss */
+body#admin-product.add .footer {
+  display: none;
+}
+
+/* line 40, sass/screen.scss */
+body#admin-vendor.add form {
+  margin: 0 0 0 0;
+}
+/* line 44, sass/screen.scss */
+body#admin-vendor.add #resultsContainer table thead tr th:nth-child(1),
+body#admin-vendor.add #resultsContainer table tbody tr td:nth-child(1) {
+  width: 40px;
+  text-align: center;
+}
+
+/* line 51, sass/screen.scss */
+.loadingIndicator {
+  background-image: url("images/loading_large_icon.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 1px;
+  vertical-align: text-top;
+  width: 36px;
+}
+
+/* line 64, sass/screen.scss */
+#importingIndicator,
+#loadingIndicator {
+  display: none;
+}
+/* line 67, sass/screen.scss */
+#importingIndicator p,
+#loadingIndicator p {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 15px;
+}
+/* line 72, sass/screen.scss */
+#importingIndicator p .loadingIndicator,
+#loadingIndicator p .loadingIndicator {
+  float: left;
+}
+
+/* line 78, sass/screen.scss */
+#importAlert {
+  display: none;
+}
+
+/* line 80, sass/screen.scss */
+.noMargins {
+  margin: 0 0 0 0;
+}
+
+/* line 82, sass/screen.scss */
+.rightFade {
+  background-image: -linear-gradient(right, white, #eeeeee);
+  background-image: -moz-linear-gradient(right, white, #eeeeee);
+  background-image: -webkit-linear-gradient(right, white, #eeeeee);
+}
+
+/* line 88, sass/screen.scss */
+.productThumbnail {
+  background-color: #ddd;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 110px;
+  line-height: 110px;
+  width: 110px;
+}
+
+/* line 100, sass/screen.scss */
+body#admin-product.edit .product_record form label,
+body#admin-product.view .product_record form label {
+  font-weight: bold;
+}
+/* line 101, sass/screen.scss */
+body#admin-product.edit .product_record form label, body#admin-product.edit .product_record form input, body#admin-product.edit .product_record form textarea,
+body#admin-product.view .product_record form label,
+body#admin-product.view .product_record form input,
+body#admin-product.view .product_record form textarea {
+  width: 99%;
+}
+/* line 103, sass/screen.scss */
+body#admin-product.edit .product_record form hr,
+body#admin-product.view .product_record form hr {
+  margin: 10px 0;
+}
+/* line 106, sass/screen.scss */
+body#admin-product.edit .product_record form div.span4 label, body#admin-product.edit .product_record form div.span4 input, body#admin-product.edit .product_record form div.span4 textarea,
+body#admin-product.view .product_record form div.span4 label,
+body#admin-product.view .product_record form div.span4 input,
+body#admin-product.view .product_record form div.span4 textarea {
+  width: 97%;
+}
+/* line 110, sass/screen.scss */
+body#admin-product.edit .product_record form div.span6 label, body#admin-product.edit .product_record form div.span6 input, body#admin-product.edit .product_record form div.span6 textarea,
+body#admin-product.view .product_record form div.span6 label,
+body#admin-product.view .product_record form div.span6 input,
+body#admin-product.view .product_record form div.span6 textarea {
+  width: 97.5%;
+}
+/* line 114, sass/screen.scss */
+body#admin-product.edit .product_record form table th,
+body#admin-product.view .product_record form table th {
+  width: 170px;
+  vertical-align: middle;
+}
+/* line 115, sass/screen.scss */
+body#admin-product.edit .product_record form table input,
+body#admin-product.view .product_record form table input {
+  width: 85%;
+}
+
+@media (max-width: 767px) {
+  /* line 125, sass/screen.scss */
+  body#admin-product.edit .product_record form table th,
+  body#admin-product.view .product_record form table th {
+    width: auto;
+  }
+}
