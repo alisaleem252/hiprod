@@ -1,5 +1,10 @@
 <?php
-
+/*
+ *  Ajax Controller
+ *
+ *  @author Jordan Dalton <jordandalton@wrsgroup.com>
+ *  @created Nov 1, 2012, 9:39:54 AM
+ */
 class Admin_Ajax_Controller extends Admin_Base_Ajax_Controller
 {
     //--------------------------------------------------------------------------

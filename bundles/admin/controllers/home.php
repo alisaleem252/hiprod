@@ -28,11 +28,9 @@ class Admin_Home_Controller extends Admin_Base_Controller
                 // Redirect user the url they were trying to access
                 return Redirect::to( $url );
             }
-            
             // Redirect to the admin dashboard otherwise
             return Redirect::to_route('admin-dashboard');
         }
-        
         // Redirect to login page otherwise
         return Redirect::to_route('admin-login');
     }

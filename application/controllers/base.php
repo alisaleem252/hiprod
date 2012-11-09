@@ -46,7 +46,7 @@ class Base_Controller extends Controller
                 
         // Share the sidebar anywhere
         View::share('sidebar', View::make('partials.sidebar')->render());
-        
+   
 		parent::__construct();
     }
 }

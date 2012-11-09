@@ -10,6 +10,7 @@
 | is perfectly suited for building large applications and simple APIs.
 |
 */
+
 Route::get('/', array(
     'as'    => 'home',
     'uses'  => 'home@index'

@@ -15,7 +15,7 @@ class Ajax_Controller extends Base_Ajax_Controller
      * @param string|int $asi_number    The asi number to check against.
      */
     public function get_asi_quickcheck( $asi_number )
-    {       
+    {
 		$input = array('asi_number' => $asi_number);
 		$rules = array('asi_number' => 'valid_asi');
         
@@ -28,7 +28,6 @@ class Ajax_Controller extends Base_Ajax_Controller
         // Return the response
         return Response::json( $response );
     }
-    
-    //--------------------------------------------------------------------------
+    //--------------------------------------------------------------------------    
 }
 /* End of file ajax.php */
