@@ -11,8 +11,8 @@ return array(
 	|
 	*/
     'server' => defined('LARAVEL_ENV') === 'production' 
-                    ? 'mail.wrsgroup.com' 
-                    : 'mail.wrsgroup.com',
+                    ? '<production mail server address>' 
+                    : '<development server address>',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -23,8 +23,8 @@ return array(
 	|
 	*/
     'from' => defined('LARAVEL_ENV') === 'production' 
-                    ? 'jordandalton@wrsgroup.com' 
-                    : 'jordandalton@wrsgroup.com',
+                    ? '<production email address>' 
+                    : '<development email address>',
     
 	/*
 	|--------------------------------------------------------------------------
@@ -32,8 +32,8 @@ return array(
 	|--------------------------------------------------------------------------
 	*/
     'admin' => defined('LARAVEL_ENV') === 'production' 
-                    ? 'jordandalton@wrsgroup.com' 
-                    : 'jordandalton@wrsgroup.com',
+                    ? '<production email address>' 
+                    : '<development email address>',
 );
 
 /* End of file email.php */

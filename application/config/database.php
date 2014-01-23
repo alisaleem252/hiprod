@@ -69,9 +69,9 @@ return array(
         'development' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
-			'database' => 'hiprodv3',
-			'username' => 'localphp',
-			'password' => 'usrokuphp',
+			'database' => 'database',
+			'username' => 'username',
+			'password' => 'password',
 			'charset'  => 'utf8',
 			'prefix'   => '',
         ),
@@ -80,9 +80,9 @@ return array(
         'production' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhosts',
-			'database' => 'hiprodv2',
-			'username' => 'wrsconnect',
-			'password' => 'usrokuwrsconnect',
+			'database' => 'database',
+			'username' => 'username',
+			'password' => 'password',
 			'charset'  => 'utf8',
 			'prefix'   => '',
         )

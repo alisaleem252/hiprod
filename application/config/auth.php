@@ -78,16 +78,16 @@ return array(
     'ldap' => array(
         
         // Hostname of the domain controller
-        'host' => '192.168.2.41',
+        'host' => '', // 192.168.1.5',
         
         // The domain name
-        'domain' => 'wntdom.wrsgroup.com',
+        'domain' => '', //yourcompany.com',
         
         // Set the base dsn
-        'basedn' => 'CN=Users,DC=wntdom,DC=wrsgroup,DC=com',
+        'basedn' => '', // CN=Users,DC=yourcompany,DC=com',
         
         // Domain credentials the app should use to validate users
-        'control_user'      => 'adreader',
-        'control_password'  => '2hzi45aLd6Ntp67!'
+        'control_user'      => 'username',
+        'control_password'  => 'password'
     ),
 );

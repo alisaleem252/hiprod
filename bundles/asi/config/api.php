@@ -15,8 +15,8 @@ return array(
 	|
 	*/
     
-    'api_key'       => '500011449',
-    'api_secret'    => '6033fc33c2e4f4a7263796cab40875ed',
+    'api_key'       => '<api key>',
+    'api_secret'    => '<api secret>',
     'api_url'       => 'http://api.asicentral.com',
     'api_url_v1'    => 'http://api.asicentral.com/v1/',
     
